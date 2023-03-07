@@ -3,9 +3,8 @@ body {
     align-content: center;
 }
 
-hr {
-    color: blue;
-    height: 50px;
+div {
+    text-align: center;
 }
 
 .espaco-direita {
