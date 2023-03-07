@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    align-content: center;
+}
+
+hr {
+    color: blue;
+    height: 50px;
+}
+
+.espaco-direita {
+    margin-right: 71%;
+}
