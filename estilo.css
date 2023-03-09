@@ -1,12 +1,19 @@
 body {
     padding: 0;
     align-content: center;
+    margin-left: 297px;
+    margin-right: 297px;
 }
 
-div {
+span {
+    margin-left: 52%;
+}
+
+.centralizar {
     text-align: center;
+    padding: 30px;
 }
 
-.espaco-direita {
-    margin-right: 71%;
+.espaco {
+    margin-bottom: 34px;
 }
