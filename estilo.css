@@ -1,12 +1,18 @@
 body {
-    padding: 0;
-    align-content: center;
-    margin-left: 297px;
-    margin-right: 297px;
+    max-width: 61%;
+    margin: 0 auto;
+    background-image: url(src/fundo.png);
+
 }
 
-span {
-    margin-left: 52%;
+
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .centralizar {
@@ -15,5 +21,19 @@ span {
 }
 
 .espaco {
-    margin-bottom: 34px;
+    margin-top: 2%;
+    margin-bottom: 2.8%;
+    position: relative;
+}
+
+.link {
+    float: right;
+}
+
+#capa {
+    text-align: center;
+}
+
+#fundo {
+    background-image: url(src/fundo2.png);
 }
