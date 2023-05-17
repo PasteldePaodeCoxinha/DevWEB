@@ -3,10 +3,10 @@ from flask_mysqldb import MySQL
 
 app = Flask("__name__")
 
-app.config['MYSQL_Host'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Silv@2311'
-app.config['MYSQL_DB'] = 'DevWeb'
+app.config["MYSQL_HOST"] = "54.237.109.56"
+app.config["MYSQL_USER"] = "unes"
+app.config["MYSQL_PASSWORD"] = "Silv@2311"
+app.config["MYSQL_DB"] = "devweb"
 
 mysql = MySQL(app)
 
@@ -21,23 +21,26 @@ def quemSomos():
     return render_template("quemSomos.html")
 
 
-@app.route("/contato", methods=['GET', 'POST'])
+@app.route("/contato", methods=["GET", "POST"])
 def contato():
     if request.method == "POST":
-        email = request.form['email']
-        assunto = request.form['assunto']
-        descricao = request.form['descricao']
+        email = request.form["email"]
+        assunto = request.form["assunto"]
+        descricao = request.form["descricao"]
 
         cur = mysql.connection.cursor()
         cur.execute(
-            "INSERT INTO contatos(email, assunto, descricao) VALUES (%s, %s, %s)",(email, assunto, descricao))
+            "INSERT INTO contatos(email, assunto, descricao) VALUES (%s, %s, %s)",
+            (email, assunto, descricao),
+        )
 
         mysql.connection.commit()
 
         cur.close()
 
-        return 'sucesso'
-    return render_template('contato.html')
+        return "<h1>sucesso: <a href='./contato'>VOLTAR</a></h1>"
+    return render_template("contato.html")
+
 
 @app.route("/user")
 def user():
@@ -52,4 +55,4 @@ def user():
         userDetails = "Não tem nada"
     cur.close()
 
-    return render_template('user.html', userDetails=userDetails)
+    return render_template("user.html", userDetails=userDetails)
