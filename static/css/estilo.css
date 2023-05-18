@@ -1,10 +1,12 @@
+/*---------------------------
+------ESTILAÇÃO DAS TAGS-----
+-----------------------------*/
 body {
     max-width: 61%;
     margin: 0 auto;
     background-image: url(src/fundo.png);
 
 }
-
 
 p {
     text-align: justify;
@@ -15,21 +17,30 @@ img {
     height: auto;
 }
 
+/*---------------------------
+-----------CLASSES-----------
+-----------------------------*/
+
 .centralizar {
     text-align: center;
     padding: 30px;
 }
 
 .espaco {
-    margin-top: 2%;
-    margin-bottom: 2.8%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0 1vw;
+    text-align: center;
 }
 
 .link {
     float: right;
-
+    margin: 3vh;
 }
+
+/*---------------------------
+-------------ID'S------------
+-----------------------------*/
 
 #capa {
     text-align: center;
