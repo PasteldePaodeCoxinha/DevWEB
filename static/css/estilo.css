@@ -17,6 +17,24 @@ img {
     height: auto;
 }
 
+table {
+    border: 3px solid;
+    text-align: center;
+}
+
+thead tr {
+    font-size: 5vw;
+}
+
+th {
+    border: 3px solid;
+}
+
+tr {
+    border: 3px solid;
+    font-size: 3vw;
+}
+
 /*---------------------------
 -----------CLASSES-----------
 -----------------------------*/
@@ -48,4 +66,10 @@ img {
 
 #fundo {
     background-image: url(src/fundo2.png);
+}
+
+#Logo {
+    width: 100%;
+    height: auto;
+    max-width: 14vw;
 }
