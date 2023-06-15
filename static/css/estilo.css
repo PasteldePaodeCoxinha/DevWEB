@@ -1,15 +1,20 @@
 /*---------------------------
 ------ESTILAÇÃO DAS TAGS-----
 -----------------------------*/
-body {
-    max-width: 61%;
-    margin: 0 auto;
-    background-image: url(src/fundo.png);
 
+body {
+    margin: 0 auto;
+    background-image: url(../img/fundo2.png);
 }
 
 p {
     text-align: justify;
+    font-size: 24px;
+}
+
+label {
+    text-align: justify;
+    font-size: 24px;
 }
 
 img {
@@ -32,28 +37,57 @@ th {
 
 tr {
     border: 3px solid;
-    font-size: 15px;
+    font-size: 23px;
+}
+
+a {
+    text-align: justify;
+    font-size: 21px;
+}
+
+li {
+    font-size: 22px;
+}
+
+input {
+    width: 50%;
+}
+
+button {
+    margin-top: 3%;
+    width: 13%;
 }
 
 /*---------------------------
 -----------CLASSES-----------
 -----------------------------*/
 
+.enviar {
+    text-align: center;
+    font-size: 16px;
+}
+
+.quest {
+    display: flex;
+    flex-direction: column;
+}
+
 .centralizar {
     text-align: center;
     padding: 30px;
 }
 
-.espaco {
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 1vw 0 1vw;
     text-align: center;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
 .link {
     float: right;
-    margin: 3vh;
+    margin-top: 10px auto;
 }
 
 /*---------------------------
@@ -71,5 +105,58 @@ tr {
 #Logo {
     width: 100%;
     height: auto;
-    max-width: 14vw;
+    max-width: 18vw;
+    max-height: 9vw;
+}
+
+#Tabela {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:600px) {
+
+    body {
+        max-width: 61%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0 auto;
+        background-image: url(../img/fundo2.png);
+    }
+
+    p {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    a {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    label {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .enviar {
+        text-align: center;
+        font-size: 9px;
+    }
+
+    thead tr {
+        font-size: 23px;
+    }
+
+    tr {
+        border: 3px solid;
+        font-size: 16px;
+    }
 }
